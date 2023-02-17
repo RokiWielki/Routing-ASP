@@ -8,14 +8,13 @@ namespace Routing.Controllers
         {
             return View();
         }
+        [Route("List")]
         public IActionResult List()
         {
             return View();
         }
-        public IActionResult Details()
-        {
-            return View();
-        }
+
+        [Route("Details/{id}")]
         public IActionResult Details(int id)
         {
             return View();
